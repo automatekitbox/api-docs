@@ -1,4 +1,4 @@
-Feature: DAOP-1213-users - CRUD operations for users
+Feature: CRUD operations for users
 
 
 
@@ -38,7 +38,7 @@ Feature: DAOP-1213-users - CRUD operations for users
       | url             | statuscode | filepath                                |
       | /users/v2/users | 200        | ./data/user/v2/request/userservice.json |
 
-  Scenario Outline: C216921 POST - Create a new login
+  Scenario Outline:  POST - Create a new login
     When create request is sent with the url "<url>" for user service to to login
     """
       {
@@ -56,7 +56,7 @@ Feature: DAOP-1213-users - CRUD operations for users
       | url             | statuscode |
       | /users/v2/login | 200        |
 
-  Scenario Outline: C216926 PATCH - updates a user
+  Scenario Outline:  PATCH - updates a user
     When patch update request is sent with url "<url>" for user service to update existing user
     """
     {
